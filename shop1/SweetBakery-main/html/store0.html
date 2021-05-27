@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bakery-Store</title>
+    <script src="../js/Product Detail.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Great+Vibes&family=Josefin+Sans:wght@500&family=PT+Sans&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Lobster&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/store.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
+
+    <nav id="navigation">
+        <ul>
+            <li class="list"><a href="../html/SweetBakery.html">Home</a></li>
+            <li class="list"><a href="#">Store</a></li>
+            <!-- <li class="list"><a href="#gallary">Gallery</a></li> -->
+            <li class="list"><a href="../html/Services.html">Services</a></li>
+            <li class="list"><a href="../html/AboutUs.html">About us</a></li>
+            <li class="list"><a href="../html/ContactUs.html">Contact us</a></li>
+        </ul>
+
+        <!--<div id="search" class="custom">
+            <img src="../img/search.png" alt="search">
+        </div>
+
+        <div id="cart" class="custom">
+            <img src="../img/cart1.png" href="C:\Users\Avdish Prajapati\Downloads\SweetBakery-main\html\Product Detail.html" alt="cart1">
+        </div>-->
+    </nav>
+
+
+
+    <!-- Store Section -->
+
+    <section id="store">
+
+
+
+        <div id="cards">
+
+                <div id="box1" class="boxcustom">
+                    <img src="../img/trending/t1.jpg" alt="sweets">
+
+                    <h2 id="cake1" class="subheading">Rose-Blue Cake</h2>
+
+                    <h3>400₹</h3>
+                    
+                    <div class="button_cont" align="center"><a onclick="productCake1()" class="example_c"
+                            href="../html/Product Detail.html" target="_blank"
+                            rel="nofollow noopener">Order Now</a>
+                    </div>
+
+                </div>
+
+                <div id="box2" class="boxcustom">
+                    <img src="../img/trending/t2.jpg" alt="sweets">
+
+                    <h2 id="cake2" class="subheading">Rose Cake</h2>
+
+                    <h3>400₹</h3>
+            
+                    <div class="button_cont" align="center"><a onclick="productCake2()" class="example_c" href="../html/Product Detail.html" target="_blank"
+                            rel="nofollow noopener">Order Now</a></div>
+
+                </div>
+
+                <div id="box3" class="boxcustom">
+                    <img src="../img/trending/t3.jpg" alt="sweets">
+    
+                    <h2 id="cake3" class="subheading">Purple Cake</h2>
+    
+                    <h3>400₹</h3>
+                  
+                    <div class="button_cont" align="center"><a class="example_c" onclick="productCake3()" href="../html/Product Detail.html" target="_blank"
+                            rel="nofollow noopener">Order Now</a></div>
+    
+                </div>
+
+                <div id="box4" class="boxcustom">
+                    <img src="../img/trending/t4.jpg" alt="sweets">
+    
+                    <h2 id="cake4" class="subheading">White-Cream Spacial Cake</h2>
+    
+                    <h3>400₹</h3>
+                   
+                    <div class="button_cont" align="center"><a class="example_c" onclick="productCake4()" href="../html/Product Detail.html" target="_blank"
+                            rel="nofollow noopener">Order Now</a></div>
+    
+                </div>
+                <div id="box5" class="boxcustom">
+                    <img src="../img/trending/t5.jpg" alt="sweets">
+    
+                    <h2 id="cake5" class="subheading">Blue Spacial Cake</h2>
+    
+                    <h3>400₹</h3>
+                    
+                    <div class="button_cont" align="center"><a class="example_c" onclick="productCake5()" href="../html/Product Detail.html" target="_blank"
+                            rel="nofollow noopener">Order Now</a></div>
+    
+                </div>
+
+            
+                
+
+
+    </section>
+
+</body>
+
+
+
+<!-- Script Containing Product Information and Store it in local storage -->
+
+<script>
+    let product1 = "Rose-Blue Cake"
+    let imagesrc1="../img/trending/t1.jpg"
+    let check1=false;
+    function productCake1() {
+        localStorage.clear();
+        localStorage.setItem("cakename", product1);
+        localStorage.setItem("cakeimg1",imagesrc1)
+        check1=true;
+        localStorage.setItem("flag1",check1);
+        return false
+    }
+
+
+    let product2 = "Rose Cake"
+    let imagesrc2="../../img/trending/t2.jpg"
+    let check2=false;
+
+
+    function productCake2() {
+        localStorage.clear();
+        localStorage.setItem("cakename", product2);
+        localStorage.setItem("cakeimg2",imagesrc2)
+        check2=true;
+        localStorage.setItem("flag2",check2);
+        return false
+    }
+
+    let product3 = "Purple Cake"
+    let imagesrc3="../img/trending/t3.jpg"
+    let check3=false;
+
+
+    function productCake3() {
+        localStorage.clear();
+        localStorage.setItem("cakename", product3);
+        localStorage.setItem("cakeimg3",imagesrc3)
+        check3=true;
+        localStorage.setItem("flag3",check3);
+        return false
+    }
+
+    let product4 = "White-Cream Spacial Cake"
+    let imagesrc4="../img/trending/t4.jpg"
+    let check4=false;
+
+
+    function productCake4() {
+        localStorage.clear();
+        localStorage.setItem("cakename", product4);
+        localStorage.setItem("cakeimg4",imagesrc4)
+        check4=true;
+        localStorage.setItem("flag4",check4);
+        return false
+    }
+
+    let product5 = "Blue Spacial Cake"
+    let imagesrc5="../img/trending/t5.jpg"
+    let check5=false;
+
+
+    function productCake5() {
+        localStorage.clear();
+        localStorage.setItem("cakename", product5);
+        localStorage.setItem("cakeimg5",imagesrc5)
+        check5=true;
+        localStorage.setItem("flag5",check5);
+        return false
+    }
+</script>
+
+</html>
